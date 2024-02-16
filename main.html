@@ -8,17 +8,29 @@
 
 <body>
 	<!--SGN the entire body must be written by student -->
-	Name<input type="Text" id="name" required><br>
-	Email<input type="Email" id="email" placeholder="Email"><br>
+	<form method="post">
+	<label for="name">Name:</label> <input type="Text" id="name" required><br>
+	<label for="email">Email:</label><input type="Email" id="email" placeholder="Email" required><br>
 	Gender: <br>
-	Male<input type="Radio" id="gender_m" name="gender" value="male"><br>
-	Female<input type="Radio" id="gender_f" name="gender" value="female"><br>
-	Car brands<select type="select" id="cars">
-		
-	</select>
-
+	Male<input type="Radio" id="gender_m" name="gender" value="male" required>
+	Female<input type="Radio" id="gender_f" name="gender" value="female" required><br>
+	<label for="cars">Car Brands:</label><select type="select" id="cars" required>
+		<option value="" disabled selected hidden>--Please choose an option--"</option>
+		<option value="Volvo">Volo</option>
+		<option value="Mercedez">Mercedez</option>
+		<option value="Thar">Thar</option>
+		<option value="Audi">Audi</option>
+	</select><br>
+		<label for="age">Age:</label><input type="number" id="age" required><br>
+		<label for="dob">DOB: </label><input type="date" id="dob" placeholder="-" required><br>
+		<label for="tel">Phone Number</label><input type="tel" id="tel" placeholder="xxx-xxx-xxxx"><br>
+		<label for="password">Password:</label><input type="password" id="password" placeholder="Password" required><br>
+		<input type="checkbox" id="tos" required>I agree to the TOS<br>
+		<button type="submit" value="submit">Submit</button>
 	
+	</form>
     <script type="text/javascript" src="./script.js">
+		
 </script>
 
 </body>
